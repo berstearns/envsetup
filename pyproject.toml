@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "envsetup"
+version = "0.1.0"
+description = "A cross-environment setup and info package (Colab, Jupyter, Docker, scripts)"
+authors = [{name="Your Name"}]
+license = "MIT"
+dependencies = []
