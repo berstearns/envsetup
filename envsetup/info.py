@@ -13,7 +13,7 @@ from .detectors import (
 
 from .envloader import load_environment_variables
 
-def get_environment_info():
+def get_environment_info(dotenv_path=".env"):
     env_type = get_environment_type()
 
     env_info = {
