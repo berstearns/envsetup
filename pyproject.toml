@@ -9,3 +9,8 @@ description = "A cross-environment setup and info package (Colab, Jupyter, Docke
 authors = [{name="Your Name"}]
 license = "MIT"
 dependencies = []
+
+
+[project.optional-dependencies]
+dotenv = ["python-dotenv"]
+

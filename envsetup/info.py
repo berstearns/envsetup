@@ -11,6 +11,8 @@ from .detectors import (
     get_environment_type,
 )
 
+from .envloader import load_environment_variables
+
 def get_environment_info():
     env_type = get_environment_type()
 
@@ -41,6 +43,7 @@ def get_environment_info():
             "SHELL": os.getenv("SHELL", ""),
             "PATH": os.getenv("PATH", ""),
         },
+        "env_vars": load_environment_variables(dotenv_path=dotenv_path),
         "unique_id": str(uuid.uuid4()),
     }
 
